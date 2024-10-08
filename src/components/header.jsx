@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css'; // Ensure this CSS file is updated for the new styles
+import './header.css'; // Ensure this CSS file is updated for the new styles
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

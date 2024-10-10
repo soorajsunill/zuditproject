@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css'; // Ensure this CSS file is updated for the new styles
+import MenuButtons from './MenuButtons';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +12,7 @@ const Header = () => {
   };
 
   return (
+    <div className="main-header">
     <header className="header">
       <div className="hamburger-container" onClick={toggleMenu}>
         <div className={`hamburger ${isMenuOpen ? '×' : '☰'}}`}>
@@ -20,7 +23,8 @@ const Header = () => {
         
       </div>
       
-      <img src="images/mainlogo-min.png" id='logo'/>
+      
+      <Link to="/"><img src="images/mainlogo-min.png" id='logo'/></Link>
 
       {/* Full-screen overlay */}
       <div className={`menu-overlay ${isMenuOpen ? 'visible' : ''}`} onClick={toggleMenu}></div>
@@ -36,6 +40,9 @@ const Header = () => {
         </ul>
       </nav>
     </header>
+    <MenuButtons />
+
+    </div>
   );
 };
 

@@ -3,15 +3,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #719cd1; /* Amazon-like dark background */
+  background-color: #ff4d00be; /* Amazon-like dark background */
   color: white;
   padding: 10px 20px;
   position: relative;
+
+  max-width: 498px;
+    margin: 0 auto;
+    padding: 7px;
 }
 
 #logo {
-height: 6rem;
-}
+  height: 70px;
+  width: 100%;
+  }
 
 /* Hamburger menu container */
 .hamburger-container {
@@ -104,3 +109,4 @@ height: 6rem;
 .side-menu ul li a:hover {
   color: #ffffffa8; /* Amazon-like hover effect */
 }
+

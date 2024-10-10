@@ -1,0 +1,99 @@
+
+.menu-container {
+    display: flex;
+    justify-content:space-between ;
+    background-color: #ff8c00b0 ;
+
+    max-width: 498px;
+    margin: 0 auto;
+    padding: 7px;
+  }
+  
+  
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85px;
+    height: 100px;
+    padding: 9px;
+    background: rgba(255, 224, 199, 0.753);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .menu-button:hover {
+    border-color: #ff6b35;
+  }
+  
+  .menu-button.selected {
+    border: 1px solid #ff6b35;
+  }
+  
+  .menu-icon {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .menu-label {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  /* Icons */
+  .icon-chinese {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXgwWbR9XDiKMsQpLWA_bG_RwLx1Nxy4pn5K35FonlQ&s');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .icon-arabian {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtodjf8s2ZnvE4pKd76fOvED3Velcmw9UMLw&s');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  
+  .icon-biriyani {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6nWrSiL2sYZqOPGflxxknJR7RIC0vPxLbA&s');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .icon-juices {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScbWnmAw5cpUzvwLYr4d0av4CmyfyzK0ZBsA&s');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: 480px) {
+  .menu-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .menu-button {
+    width: 60px;
+    height: 66px;
+    padding: 8px;
+  }
+
+  .menu-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu-label {
+    font-size: 14px;
+  }
+}
